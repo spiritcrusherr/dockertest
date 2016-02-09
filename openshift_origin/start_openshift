@@ -3,3 +3,9 @@ docker run -d --name "origin" \
         -v /:/rootfs:ro -v /var/run:/var/run:rw -v /sys:/sys -v /var/lib/docker:/var/lib/docker:rw \
         -v /var/lib/origin/openshift.local.volumes:/var/lib/origin/openshift.local.volumes \
         openshift/origin start
+
+* per collegarsi al container che sta girando:
+        * docker exec -it origin bash: aperta shell nel piccolo mondo del container docker
+        * oc login (test/test) e parte openshift origin
+        * alla scoperta dei comandi di openshift
+
